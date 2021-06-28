@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <title>Responsive Home Page</title>
+
+</head>
+
+<body id="homePage">
+
+
+
+    <header>
+        <div id="pageStylePinkBlock">
+
+        </div>
+
+
+        <div class="flex-wrapper">
+
+            <div class="header__logo">
+
+                <img src="./images/logo.png" alt="logo.png not available">
+
+                <!-- hamburger -->
+                <span class="hamBurger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </span>
+            </div>
+
+            <nav class="header__nav nav-click">
+
+                <!-- nav link -->
+                <div class="header__nav-link">
+                    <a href="#">
+                        Registered Users
+                    </a>
+                </div>
+
+                <!-- nav link -->
+                <div class="header__nav-link">
+                    <a href="#">
+                        How It Works
+                    </a>
+                </div>
+
+                <!-- nav link -->
+                <div class="header__nav-link">
+                    <a href="#">
+                        Services
+                    </a>
+                </div>
+
+                <!-- nav link -->
+                <div class="header__nav-link">
+                    <a href="#">
+                        Shop
+                    </a>
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <!-- hero section -->
+        <section id="hero-section" class="sections-mb sections-padding">
+
+            <div class="container">
+
+                <h1>We care for your dog.<br>Naturally.</h1>
+                <p class="heading-sm-text">Welcome to pet paradise.</p>
+                <a class="btn-basic-style" href="#" role="button">Learn more</a>
+
+            </div>
+
+        </section>
+
+        <!-- taking care of dogs -->
+        <section class="taking-care__section sections-mb">
+
+            <div class="container">
+
+                <div class="row g-0">
+
+                    <!-- image -->
+                    <div class="col-11 mb-5 mb-lg-0 mx-auto mx-lg-0 col-lg-6 taking-care__img-container ">
+                        <img class="dog-img" src="./images/sec-2-img.jpg" alt="./images/sec-2-img.jpg not available">
+                    </div>
+
+                    <!-- text content -->
+                    <div class="col-11 mx-auto mx-lg-0 col-lg-6 taking-care__text-container">
+
+                        <p class="heading-sm-text">Welcome to pet paradise.</p>
+                        <h1>We care for your dog.<br>Naturally.</h1>
+
+                        <p>Once your dog is part of the pack, all of our services are available to them. That means our
+                            spa, our daycare facility and our overnight visits. Just looking for a spa day for your
+                            pooch? That’s even easier.</p>
+
+                        <a class="btn-basic-style" href="#" role="button">Learn more</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- image hover section -->
+        <section class="image-hover__section sections-mb">
+
+            <div class="container">
+
+                <div class="row g-0">
+
+                    <!-- image holder -->
+                    <div class="col-11 mb-5 mb-lg-0 mx-auto mx-lg-0 col-lg-4">
+                        <div class="image-hover__img-holder"></div>
+                    </div>
+
+                    <!-- image holder -->
+                    <div class="col-11 mb-5 mb-lg-0 mx-auto mx-lg-0 col-lg-4">
+                        <div class="image-hover__img-holder"></div>
+                    </div>
+
+                    <!-- image holder -->
+                    <div class="col-11 mb-5 mb-lg-0 mx-auto mx-lg-0 col-lg-4">
+                        <div class="image-hover__img-holder"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- form section -->
+        <section class="form__section sections-mb">
+            <div class="container">
+
+                <h1 class="text-center">Stay in the loop</h1>
+                <p class="text-center heading-sm-text">Sign up for pet pics, promos and special events.</p>
+
+                <!-- form -->
+                <form action="">
+
+                    <!-- first name and last name -->
+                    <div class="user-form__row-my row mx-0">
+
+                        <div class="ps-0 col-11 mb-5 mb-lg-0 mx-auto mx-lg-0 col-lg-6">
+                            <label for="firstnameinput" class="user-form__label">first name</label>
+                            <input type="text" class="user-form__input form-control" name="clientFirstName"
+                                id="firstnameinput" placeholder="Enter your first name">
+                        </div>
+
+                        <div class="pe-0 col-11 mb-5 mb-lg-0 mx-auto mx-lg-0 col-lg-6">
+                            <label for="lastnameinput" class="user-form__label">last name</label>
+                            <input type="text" class="user-form__input form-control" name="clientLastName"
+                                id="lastnameinput" placeholder="Enter your last name">
+                        </div>
+
+                    </div>
+
+                    <!-- email address -->
+                    <div class="user-form__row-my row mx-0">
+
+                        <div class="ps-0 col-11 mb-5 mb-lg-0 mx-auto col-lg-8 mx-auto">
+                            <label for="clientEmail" class="user-form__label">Email</label>
+
+                            <input type="email" class="user-form__input form-control" name="clientEmail"
+                                id="clientEmail" placeholder="Enter your first name">
+                        </div>
+                    </div>
+
+                    <div style="display: grid; place-items: center; margin: 4em 0;">
+                        <button type="submit">Sign Up</button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Web design</a></li>
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">Hosting</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 item text">
+                    <h3>Company Name</h3>
+                    <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula
+                        rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum
+                        vel in justo.</p>
+                </div>
+            </div>
+            <p class="text-center copyright">Company Name © 2018</p>
+        </div>
+    </footer>
+
+    <script>
+
+        const hamBurger = document.querySelector(".hamBurger");
+        const navbar = document.querySelector(".header__nav");
+
+        hamBurger.addEventListener('click', function () {
+            navbar.classList.toggle("nav-click");
+            navbar.classList.toggle("nav-again-click");
+        });
+
+    </script>
+</body>
+
+</html>

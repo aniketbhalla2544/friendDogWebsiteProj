@@ -1,0 +1,510 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+p {
+  line-height: 1.8;
+  color: #282524;
+  font-size: 1.35rem;
+  margin-bottom: 4em !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1em !important;
+}
+
+h1 {
+  font-weight: 700 !important;
+}
+
+.heading-sm-text {
+  font-size: 1.6rem;
+  margin-bottom: 1em !important;
+  font-weight: 600 !important;
+}
+
+.btn-basic-style {
+  padding: 0.9em 2.5em;
+  border-radius: 0.6em;
+  color: #282524;
+  background-color: white;
+  font-weight: 700 !important;
+  letter-spacing: 1px;
+  transition: 500ms  background-color 0s ease;
+}
+
+.btn-basic-style:hover {
+  background-color: #db1f3e;
+  color: whitesmoke !important;
+}
+
+.sections-padding {
+  padding: 10em 0 !important;
+}
+
+.sections-mb {
+  margin-bottom: 10em !important;
+}
+
+body#homePage {
+  position: relative;
+}
+
+body#homePage header {
+  padding-top: 2em;
+  padding-bottom: 1.1em;
+  padding-left: 4em;
+  padding-right: 4em;
+  background-color: white;
+  box-shadow: 0 6px 9px rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+}
+
+body#homePage header * {
+  font-size: 1.3rem;
+}
+
+@media (max-width: 1000px) {
+  body#homePage header * {
+    font-size: 1rem;
+  }
+}
+
+body#homePage header #pageStylePinkBlock {
+  background-color: #db1f3e;
+  height: 15px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+}
+
+body#homePage header .flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+@media (max-width: 768px) {
+  body#homePage header .flex-wrapper {
+    display: block;
+  }
+}
+
+body#homePage header .flex-wrapper .header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  body#homePage header .flex-wrapper .header__logo {
+    justify-content: space-between;
+  }
+}
+
+body#homePage header .flex-wrapper .header__logo .hamBurger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  body#homePage header .flex-wrapper .header__logo .hamBurger {
+    display: block;
+  }
+}
+
+body#homePage header .flex-wrapper .header__logo .hamBurger:hover {
+  cursor: pointer;
+  outline: 1px solid white;
+  outline-offset: 10px;
+}
+
+body#homePage header .flex-wrapper .header__logo .hamBurger > div {
+  width: 35px;
+  height: 5px;
+  background-color: #db1f3e;
+  margin: 6px 0;
+}
+
+body#homePage header .flex-wrapper .header__logo img {
+  max-width: 220px;
+}
+
+@media (max-width: 1000px) {
+  body#homePage header .flex-wrapper .header__logo img {
+    max-width: 150px;
+  }
+}
+
+body#homePage header .flex-wrapper .nav-again-click {
+  display: block;
+  margin-top: 4em;
+}
+
+body#homePage header .flex-wrapper .nav-click {
+  display: none;
+  margin-top: 0;
+}
+
+body#homePage header .flex-wrapper nav.header__nav {
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
+  gap: 0 3rem;
+}
+
+@media (max-width: 1000px) {
+  body#homePage header .flex-wrapper nav.header__nav {
+    gap: 0 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  body#homePage header .flex-wrapper nav.header__nav {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  body#homePage header .flex-wrapper nav.header__nav .header__nav-link {
+    margin-bottom: 1em;
+    padding: 1em 2em;
+    position: relative;
+  }
+  body#homePage header .flex-wrapper nav.header__nav .header__nav-link::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 60%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    background-color: #db1f3e;
+  }
+}
+
+body#homePage header .flex-wrapper nav.header__nav .header__nav-link a {
+  text-decoration: none;
+}
+
+body#homePage header .flex-wrapper nav.header__nav .header__nav-link a:link, body#homePage header .flex-wrapper nav.header__nav .header__nav-link a:visited {
+  color: #282524;
+  font-weight: 700;
+}
+
+body#homePage header .flex-wrapper nav.header__nav .header__nav-link a:hover {
+  color: #db1f3e;
+}
+
+body#homePage header .flex-wrapper nav.header__nav .header__nav-link a:focus {
+  outline: 2px solid #282524 !important;
+  outline-offset: 10px;
+  border: none !important;
+}
+
+@media (max-width: 768px) {
+  body#homePage header .flex-wrapper nav.header__nav .header__nav-link a:hover {
+    text-decoration: underline;
+  }
+}
+
+body#homePage main {
+  padding-top: 8em;
+  border: 1px solid black;
+}
+
+body#homePage main * {
+  color: white;
+}
+
+body#homePage main section#hero-section {
+  position: relative;
+}
+
+body#homePage main section#hero-section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/images/main-dog.webp") no-repeat center;
+  background-size: cover;
+  z-index: -2;
+}
+
+body#homePage main section#hero-section::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-size: 100% 100%;
+  z-index: -1;
+}
+
+body#homePage main section#hero-section p {
+  margin-bottom: 3em !important;
+}
+
+body#homePage main section#hero-section a {
+  color: #282524;
+}
+
+body#homePage main section.taking-care__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body#homePage main section.taking-care__section .taking-care__img-container .dog-img {
+  aspect-ratio: 4 / 5;
+  max-width: 450px;
+}
+
+body#homePage main section.taking-care__section .taking-care__text-container * {
+  color: #282524;
+}
+
+body#homePage main section.taking-care__section .taking-care__text-container a {
+  outline: 2px solid #db1f3e;
+}
+
+body#homePage main section.taking-care__section .taking-care__text-container a:hover {
+  outline: none;
+}
+
+body#homePage main section.image-hover__section .row {
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+body#homePage main section.image-hover__section .row .image-hover__img-holder {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  padding: 1em;
+}
+
+body#homePage main section.image-hover__section .row .image-hover__img-holder:hover {
+  outline: 5px solid #db1f3e;
+  outline-offset: -2rem;
+  cursor: pointer;
+}
+
+body#homePage main section.image-hover__section .row .col-lg-4:nth-child(1) {
+  position: relative;
+}
+
+body#homePage main section.image-hover__section .row .col-lg-4:nth-child(1)::after {
+  content: "Pretty Dogs";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+body#homePage main section.image-hover__section .row .col-lg-4:nth-child(1) .image-hover__img-holder::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("/images/sec-3-dog-1.jpg") no-repeat center;
+  background-size: 100% 100%;
+  z-index: -1;
+}
+
+body#homePage main section.image-hover__section .row .col-lg-4:nth-child(1) .image-hover__img-holder::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-size: 100% 100%;
+  z-index: -1;
+}
+
+body#homePage main section.image-hover__section .row .col-lg-4:nth-child(2) {
+  position: relative;
+}
+
+body#homePage main section.image-hover__section .row .col-lg-4:nth-child(2)::after {
+  content: "Cute Ones";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+body#homePage main section.image-hover__section .row .col-lg-4:nth-child(2) .image-hover__img-holder::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("/images/sec-3-dog-2.jpg") no-repeat center;
+  background-size: 100% 100%;
+  z-index: -1;
+}
+
+body#homePage main section.image-hover__section .row .col-lg-4:nth-child(2) .image-hover__img-holder::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-size: 100% 100%;
+  z-index: -1;
+}
+
+body#homePage main section.image-hover__section .row .col-lg-4:nth-child(3) {
+  position: relative;
+}
+
+body#homePage main section.image-hover__section .row .col-lg-4:nth-child(3)::after {
+  content: "Adorable Dogs";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+body#homePage main section.image-hover__section .row .col-lg-4:nth-child(3) .image-hover__img-holder::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("/images/sec-3-img-3.jpg") no-repeat center;
+  background-size: 100% 100%;
+  z-index: -1;
+}
+
+body#homePage main section.image-hover__section .row .col-lg-4:nth-child(3) .image-hover__img-holder::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-size: 100% 100%;
+  z-index: -1;
+}
+
+body#homePage main section.form__section * {
+  color: black !important;
+}
+
+body#homePage main section.form__section form .user-form__row-my {
+  margin: 2em 0;
+}
+
+body#homePage main section.form__section form .user-form__label {
+  font-weight: 600;
+  color: #db1f3e !important;
+  font-size: 1.2rem;
+  margin-bottom: 0.5em;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+body#homePage main section.form__section form .user-form__input {
+  border-radius: 0;
+  border: none;
+  padding: 0.7em 1.2em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+body#homePage main section.form__section form .user-form__input:focus {
+  border: 3px solid #282524 !important;
+  box-shadow: none;
+}
+
+body#homePage main section.form__section form button {
+  padding: 0.9em 2.5em;
+  border-radius: 0.6em;
+  color: white !important;
+  background-color: #db1f3e;
+  font-weight: 700 !important;
+  letter-spacing: 1px;
+  transition: 500ms background-color 0s ease;
+}
+
+body#homePage main section.form__section form button:hover {
+  background-color: white;
+  color: #282524 !important;
+}
+
+body#homePage footer#footer {
+  margin-bottom: 0;
+  background-color: #db1f3e;
+  padding-top: 4em;
+}
+
+body#homePage footer#footer h3 {
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 600;
+}
+
+body#homePage footer#footer p {
+  color: #dddddd;
+}
+
+body#homePage footer#footer p.copyright {
+  font-size: 1rem;
+}
+
+body#homePage footer#footer ul {
+  padding: 0;
+}
+
+body#homePage footer#footer ul li {
+  list-style: none;
+  font-weight: 400;
+  margin-bottom: 0.8em;
+}
+
+body#homePage footer#footer ul li a:link,
+body#homePage footer#footer ul li a:visited {
+  color: #dddddd;
+}
+/*# sourceMappingURL=index.css.map */

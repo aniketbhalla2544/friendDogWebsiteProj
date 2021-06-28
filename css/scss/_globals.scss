@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap');
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+$pink: rgb(219, 31, 62);
+$black: #282524;
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+p{
+    line-height: 1.8;
+    color: $black;
+    font-size: 1.35rem;
+    margin-bottom: 4em !important;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin-bottom: 1em !important;
+}
+
+h1{
+    font-weight: 700 !important;
+}
+
+.heading-sm-text{
+    font-size: 1.6rem;
+    margin-bottom: 1em !important;
+    font-weight: 600 !important;
+}
+
+.btn-basic-style{
+    padding: 0.9em 2.5em;
+    border-radius: 0.6em;
+    color: $black;
+    background-color: white;
+    font-weight: 700 !important;
+    letter-spacing: 1px;
+    transition: 500ms  background-color 0s ease;
+
+    &:hover{
+        background-color: $pink;
+        color: whitesmoke !important;
+    }
+}
+
+.sections-padding{
+    padding: 10em 0 !important;
+}
+
+.sections-mb{
+    margin-bottom: 10em !important;
+}
+
+// helping classes
+
+
+
+
